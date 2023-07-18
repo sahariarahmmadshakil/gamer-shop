@@ -5,7 +5,8 @@ body {
 
 /* header area  */
 .header {
-    padding-top: 30px;
+    padding-top: 20px;
+    padding-bottom: 20px;
     background-color: #ffffff;
 }
 
@@ -64,26 +65,196 @@ div {
     font-size: 25px;
 }
 
+/* game promotion area  */
+.promotion-area {
+    background-color: #fbf6fd;
+}
+
+.promotion-body {
+    max-width: 1440px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.promotion-text {
+    width: 720px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.promotion-text>h1 {
+    font-size: 48px;
+    line-height: 0px;
+}
+
+.promotion-text>h2 {
+    font-size: 100px;
+    line-height: 75px;
+    background: -webkit-linear-gradient(#db4cc3, #a354e1);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.promotion-text>p {
+    font-size: 18px;
+    font-weight: bold;
+    color: #534c64;
+}
+
+.button-area {
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.signin-btn {
+    background-color: #ff42a5;
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 20px;
+    padding: 20px 35px;
+    border: none;
+    border-radius: 25px;
+}
+
+.gorouge-btn {
+    background-color: #4ec5f7;
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 20px;
+    padding: 20px 35px;
+    border: none;
+    border-radius: 25px;
+}
+
+.promotion-image>img {
+    height: auto;
+    margin-bottom: -7px;
+}
+
 
 /* mobile devices  */
 @media screen and (max-width: 576px) {
 
     .header-menu {
-       flex-direction: column;
+        flex-direction: column;
     }
+
     .site-menu {
         flex-direction: column;
 
     }
-    .site-menu>a,p{
+
+    .site-menu>a,
+    p {
         margin-top: 20px;
         margin-bottom: 20px;
     }
 
+    .promotion-body {
+        flex-direction: column;
+    }
+
+    .promotion-image>img {
+        height: auto;
+        width: 100%;
+    }
+
+    .promotion-text {
+        width: 100%;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .promotion-text>h1 {
+        font-size: 20px;
+        line-height: 20px;
+    }
+
+    .promotion-text>h2 {
+        font-size: 36px;
+        line-height: 30px;
+        background: -webkit-linear-gradient(#db4cc3, #a354e1);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    .promotion-text>p {
+        font-size: 16px;
+        font-weight: bold;
+        color: #534c64;
+    }
+
+    .button-area {
+        width: 100%;
+        justify-content: space-evenly;
+    }
+
+    .signin-btn {
+        font-size: 16px;
+        padding: 10px 15px;
+    }
+
+    .gorouge-btn {
+        font-size: 16px;
+        padding: 10px 15px;
+    }
 }
 
 
 /* tablet devices  */
 @media screen and (min-width:576px) and (max-width: 960px) {
-   
+
+    .promotion-body {
+        flex-direction: column;
+    }
+
+    .promotion-image>img {
+        height: auto;
+        width: 100%;
+    }
+
+    .promotion-text {
+        width: 100%;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .promotion-text>h1 {
+        font-size: 30px;
+        line-height: 20px;
+    }
+
+    .promotion-text>h2 {
+        font-size: 60px;
+        line-height: 50px;
+        background: -webkit-linear-gradient(#db4cc3, #a354e1);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    .promotion-text>p {
+        font-size: 20px;
+        font-weight: bold;
+        color: #534c64;
+    }
+
+    
+
+    .signin-btn {
+        font-size: 20px;
+        padding: 15px 25px;
+    }
+
+    .gorouge-btn {
+        font-size: 20px;
+        padding: 15px 25px;
+    }
 }
