@@ -14,6 +14,7 @@ body {
     justify-content: space-between;
     max-width: 1440px;
     margin: 0 auto;
+    align-items: center;
 }
 
 .site-logo>img {
@@ -27,10 +28,12 @@ body {
     justify-content: space-around;
 
 }
-.menu-text-color{
+
+.menu-text-color {
     color: #3e3751;
     text-decoration: none;
 }
+
 .site-menu>a,
 div {
     padding-right: 20px;
@@ -42,19 +45,45 @@ div {
     align-items: center;
     background-color: #e7e6e9;
     border-radius: 5px;
-    padding:0px 20px;
+    padding: 0px 20px;
 }
-.fa-youtube{
-color: #f61c0d;
-padding-left: 20px;
-font-size: 25px;
+
+.fa-youtube {
+    color: #f61c0d;
+    padding-left: 20px;
+    font-size: 25px;
 }
-.fa-tiktok{
-            background: linear-gradient(45deg, #EE1D52, #000000);
-            -webkit-background-clip: text;
-            -moz-background-clip: text;
-            background-clip: text;
-            color: transparent;
-            padding-left: 20px;
-            font-size: 25px;
+
+.fa-tiktok {
+    background: linear-gradient(45deg, #EE1D52, #000000);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    padding-left: 20px;
+    font-size: 25px;
+}
+
+
+/* mobile devices  */
+@media screen and (max-width: 576px) {
+
+    .header-menu {
+       flex-direction: column;
+    }
+    .site-menu {
+        flex-direction: column;
+
+    }
+    .site-menu>a,p{
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+}
+
+
+/* tablet devices  */
+@media screen and (min-width:576px) and (max-width: 960px) {
+   
 }
