@@ -1,0 +1,60 @@
+body {
+    margin-top: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* header area  */
+.header {
+    padding-top: 30px;
+    background-color: #ffffff;
+}
+
+.header-menu {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.site-logo>img {
+    width: 253px;
+    height: 53px;
+}
+
+.site-menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+}
+.menu-text-color{
+    color: #3e3751;
+    text-decoration: none;
+}
+.site-menu>a,
+div {
+    padding-right: 20px;
+}
+
+.top-social-icons {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #e7e6e9;
+    border-radius: 5px;
+    padding:0px 20px;
+}
+.fa-youtube{
+color: #f61c0d;
+padding-left: 20px;
+font-size: 25px;
+}
+.fa-tiktok{
+            background: linear-gradient(45deg, #EE1D52, #000000);
+            -webkit-background-clip: text;
+            -moz-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            padding-left: 20px;
+            font-size: 25px;
+}
