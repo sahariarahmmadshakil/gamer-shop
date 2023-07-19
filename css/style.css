@@ -3,6 +3,10 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 
+.common-text-color {
+    color: #534c64;
+}
+
 /* header area  */
 .header {
     padding-top: 20px;
@@ -135,7 +139,75 @@ div {
     margin-bottom: -7px;
 }
 
+/* games area css  */
+.games-example-heading {
+    text-align: center;
+    font-size: 48px;
+}
 
+.games-example-sub-heading {
+    font-size: 20px;
+    text-align: center;
+}
+
+.games-heading-gradiant {
+    background: -webkit-linear-gradient(#db4cc3, #a354e1);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.games-card {
+    padding-top: 30px;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.card-image {
+    width: 100%;
+}
+
+.card-content {
+    position: relative;
+    height: 400px;
+    width: 342px;
+}
+
+.overlay {
+    background-color: #ff42a436;
+    height: 373px;
+    width: 300px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.5s;
+    opacity: 0;
+    border: 2px solid #ff42a5;
+    border-radius: 15px;
+}
+
+.card-content:hover .overlay {
+    opacity: 1;
+}
+
+.overlay-elements {
+    width: 50%;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    column-gap: 10px;
+    margin-left: 28%;
+    margin-top: 50%;
+    align-items: center
+}
+.fa-play-circle{
+    color: #ffffff;
+    font-size: 30px;
+}
+.overlay-elements{
+    color: #ffffff;
+    font-weight: 600;
+}
 /* mobile devices  */
 @media screen and (max-width: 576px) {
 
@@ -246,7 +318,7 @@ div {
         color: #534c64;
     }
 
-    
+
 
     .signin-btn {
         font-size: 20px;
