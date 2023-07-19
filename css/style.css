@@ -7,6 +7,14 @@ body {
     color: #534c64;
 }
 
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
 /* header area  */
 .header {
     padding-top: 20px;
@@ -80,7 +88,9 @@ body {
     align-items: center;
     margin: 0 auto;
 }
-
+.top-link{
+    cursor: pointer;
+}
 .promotion-text {
     width: 720px;
     display: flex;
@@ -108,7 +118,7 @@ body {
 }
 
 .button-area {
-    width: 50%;
+    width: 70%;
     display: flex;
     justify-content: space-between;
 }
@@ -265,7 +275,7 @@ body {
     max-width: 1440px;
     margin: 0 auto;
     display: grid;
-    grid-template-columns: repeat(6, 1fr);
+    grid-template-columns: repeat(5, 1fr);
     grid-row-gap: 40px;
 }
 
@@ -287,13 +297,97 @@ body {
     color: #ff42a5;
     border-color: #ff42a5;
     transition: 0.5s;
-   
+
 }
-.games-icons>img{
+
+.games-icons>img {
     width: auto;
 }
-.games-icons>h4{
-   font-size: 16px;
+
+.games-icons>h4 {
+    font-size: 16px;
+}
+
+.footer {
+    background-color: #0b0223;
+}
+
+.footer-main {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.footer-logo>img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: auto;
+}
+
+.footer-menu>li>a {
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+.footer-menu>li {
+    list-style: none;
+    text-align: center;
+}
+
+.footer-menu-parent {
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.footer-menu {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    padding-left: 0px;
+}
+
+.footer-icons {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+}
+.footer-icons>li:hover i {
+    color: #ff42a5;
+}
+
+.footer-icon-parent {
+    width: 30%;
+    margin: 0 auto;
+    margin-top: 45px;
+    margin-bottom: 45px;
+}
+
+.footer-icons>li>a>i {
+    color: #ffffff;
+    font-size: 36px;
+}
+
+.terms-and-conditions {
+    width: 50%;
+    margin: 0 auto;
+}
+
+.terms-and-conditions-menu {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+}
+
+.trc-text-color {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 500;
+    text-align: center;
 }
 
 /* mobile devices  */
@@ -409,15 +503,72 @@ body {
         padding-right: 3px;
     }
 
-    .games-icons>img{
+    .games-icons>img {
         width: 36%;
     }
+
     .games-name-with-icon {
         padding-left: 5px;
     }
-    .games-icons>h4{
+
+    .games-icons>h4 {
         font-size: 9px;
-     }
+    }
+
+    .footer-menu {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        padding-left: 10px !important;
+        padding-right: 10px !important;
+
+    }
+
+    .footer-menu>li>a {
+        font-size: 12px;
+        text-align: center;
+
+    }
+
+    .footer-logo>img {
+        width: 40%;
+
+    }
+
+    .footer-menu-parent {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .footer-icons {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        grid-template-columns: repeat(3, 1fr);
+        grid-row-gap: 25px;
+        padding-left: 20px !important;
+        padding-right: 20px !important;
+    }
+
+    .footer-icon-parent {
+        width: 100%;
+        margin: 0 auto;
+
+    }
+
+    .footer-icons>li>a>i {
+        color: #ffffff;
+        font-size: 36px;
+    }
+
+    .terms-and-conditions-menu {
+        grid-template-columns: repeat(3, 1fr);
+        padding-left: 20px !important;
+        padding-right: 20px !important;
+    }
+    .terms-and-conditions {
+        width: 100%;
+        font-size: 12px;
+    }
+
 }
 
 
@@ -476,9 +627,39 @@ body {
         grid-template-columns: repeat(2, 1fr);
         justify-items: center;
     }
+
     .games-main {
         grid-template-columns: repeat(4, 1fr);
         grid-row-gap: 25px;
+    }
+
+    .footer-menu {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .footer-icon-parent {
+        width: 55%;
+        margin: 0 auto;
+    }
+
+    .terms-and-conditions-menu {
+        grid-template-columns: repeat(4, 1fr);
+        padding-left: 0px;
+    }
+
+    .terms-and-conditions {
+        width: 80%;
+    }
+
+    .footer-menu-parent {
+        width: 80%;
+    }
+
+    .footer-menu>li {
+        font-size: 16px;
+        text-align: start;
+
     }
 
 }
