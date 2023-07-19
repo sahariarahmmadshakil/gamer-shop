@@ -335,7 +335,8 @@ a {
 
 .footer-menu>li {
     list-style: none;
-    text-align: center;
+    text-align: start;
+    padding-left: 10px;
 }
 
 .footer-menu-parent {
@@ -381,6 +382,7 @@ a {
 .terms-and-conditions-menu {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
+    padding-left: 0px;
 }
 
 .trc-text-color {
